@@ -86,7 +86,7 @@ const newElements = images.map(({ preview, original, description }) => {
 
 galleryList.insertAdjacentHTML("afterbegin", newElements);
 
-// new SimpleLightbox('.gallery a', {
-//   captionsData: 'alt',
-//   captionDelay: 250,
-// });
+new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionDelay: 250,
+});
