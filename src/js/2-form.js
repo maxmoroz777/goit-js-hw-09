@@ -5,7 +5,7 @@ const formData = {
 
 const mainForm = document.querySelector(".feedback-form");
 
-mainForm.addEventListener("input", evt => {
+mainForm.addEventListener("input", evt => { 
     evt.preventDefault();
 
     if (evt.target.name === "email") {
@@ -32,6 +32,8 @@ const fillForm = () => {
         messageInput[0].value = formData.message;
     }
 }
+
+fillForm();
 
 mainForm.addEventListener("submit", (event) => {
     event.preventDefault();
